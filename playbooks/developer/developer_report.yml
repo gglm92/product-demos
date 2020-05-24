@@ -7,8 +7,8 @@
   hosts: localhost
   connection: local
   become: true
-  become_user: student1
-  become_password: '{{ ansible_ssh_pass }}'
+  become_user: '{{ ansible_user }}'
+  become_pass: '{{ ansible_ssh_pass }}'
   gather_facts: false
 
   vars:
