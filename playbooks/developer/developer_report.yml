@@ -4,6 +4,7 @@
   gather_facts: true
 
 - name: build developer report
+  hosts: localhost
   connection: local
   gather_facts: false
 
